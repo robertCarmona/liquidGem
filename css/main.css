@@ -1,0 +1,239 @@
+/* body css */
+body{
+  background-color: #EDEDED;
+}
+/* nav bar css */
+nav{
+  border-bottom: 1px solid black;
+  margin: 0 1%;
+  padding:6px 0px;
+}
+.logo, .links{
+  display:inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+/* nav left side */
+.logo h1{
+  display: inline-block;
+  font-family: cursive;
+  font-size: 22px;
+}
+/* nav right side */
+.links ul{
+  text-align: right;
+}
+.links ul li{
+  display: inline-block;
+  margin-left: 4%;
+}
+.links ul li:first-child{
+  margin-left: 0;
+}
+.links ul li:last-child{
+  margin-right:4%;
+}
+.links ul li a{
+  text-decoration: none;
+  color:black;
+}
+
+/* ------------ header section css ---------------*/
+header{
+  text-align: center;
+  margin: 3% 0;
+}
+header h1{
+  font-size: 22px;
+}
+header h1 span{
+  color:#F19FAE;
+}
+header h3{
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* ------------ main section css ------------ */
+main{
+  margin: 1% 1%;
+}
+.sunset{
+  height:210px;
+}
+.sunset img{
+  height:100%;
+  width: 100%;
+  border-radius: 15px;
+}
+#about,#work{
+  display:inline-block;
+  width: 50%;
+}
+main h1{
+  font-size: 22px;
+  font-family: cursive;
+  color: #F19FAE;
+  text-align: center;
+  margin: 6%;
+}
+main p{
+  font-weight:normal;
+  font-size: 15px;
+  padding: 18px;
+}
+
+/* ------------ Detail Trip section ------------ */
+.wrapper{
+  margin: 1% 1%;
+  text-align: center;
+
+}
+.photobox{
+  display: inline-block;
+  width: 16%;
+  height:165px;
+  text-align: left;
+  vertical-align: top;
+  background-color: white;
+  box-sizing:border-box;
+  margin:1%;
+  border-radius: 16px;
+}
+.photobox img{
+  width:100%;
+  height: 65%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.photobox h3{
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom:0;
+}
+.photobox h4{
+  margin-top:0;
+  font-size: 14px;
+  color: #F19FAE;
+  font-weight: normal;
+}
+detail h2{
+  font-size: 22px;
+  text-align: center;
+  color: #F19FAE;
+  font-family: cursive;
+  margin:2% 1%;
+}
+
+/* ------------ footer css ------------ */
+footer{
+  background-color: #2D2D2D;
+  position: relative;
+}
+.contact, .social{
+  display: inline-block;
+  width: 50%;
+}
+.contact{
+  margin-bottom:1%;
+}
+.contact h3{
+  color: #F19FAE;
+  font-family: cursive;
+  margin-top:5%;
+  margin-bottom: 0;
+  margin-left: 1%;
+}
+.contact input{
+  margin: 1% 1%;
+  width: 80%;
+}
+.contact input:nth-child(6){
+  height: 50px;
+}
+.contact button{
+  color:white;
+}
+.social{
+  text-align: right;
+  position: absolute;
+  top:50%;
+}
+.social a{
+  padding:18px;
+  text-decoration: none;
+}
+/* icons and other classes */
+/* gem */
+.fa-gem{
+  color:#F19FAE;
+  font-size: 22px;
+}
+.fab{
+  color: #2D2D2D;
+  background-color: #F19FAE;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 28px
+}
+@media(min-width:1440px){
+
+  /*larger desktop */
+  .sunset{
+    height:325px;
+  }
+  main h1, header h1, .fa-gem, .logo h1, detail h2 {
+    font-size: 40px;
+  }
+  .links a{
+    font-size: 25px;
+  }
+  .photobox{
+    height:270px;
+  }
+  .photobox h3{
+    font-size: 20px;
+  }
+  .photobox h4{
+    font-size: 16px;
+  }
+  main p{
+    font-size: 20px;
+  }
+  footer h3{
+    font-size: 30px;
+  }
+}
+@media(max-width:425px){
+  nav{
+    text-align: center;
+  }
+  .logo, .links{
+    display: block;
+    width: 100%;
+  }
+  .links ul{
+    text-align: center;
+  }
+  #about, #work {
+    display:block;
+    text-align: center;
+    width: 100%;
+  }
+  .photobox {
+    width: 40%;
+  }
+  .contact, .social {
+    display: block;
+    width: 100%;
+  }
+  .contact input{
+    width:100%;
+  }
+  .social{
+    position: static;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+}
